@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试环境对外Api测试</title>
+</head>
+<body>
+<hr />
+<h3 style="text-align:center;">
+	<span style="color:#009900;">自由薪对外Api测试</span>
+</h3>
+<p>
+	<span style="color:#009900;">
+        <hr />
+    <form action="/PostapiTestTs" method="post" >
+        <input name="selectInfo" type="radio" value="1"/>1、创建结算单(必须选择支付方式)
+        <input name="paytype" type="radio" value="1"/>1银行卡
+        <input name="paytype" type="radio" value="2"/>2微信
+        <input name="paytype" type="radio" value="3"/>3支付宝
+        <input name="paytype" type="radio" value="4"/>4第三方微信支付
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="2"/>2、查询余额
+        <input name="accountType" type="radio" value="1"/>1、商户余额
+        <input name="accountType" type="radio" value="2"/>2、抵扣券余额
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="3"/>3、根据OrderRandomCode查询结算单  请输入OrderRandomCode
+        <input id="OrderRandomCode" name="OrderRandomCode" type="text" size="50"/>
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="4"/>4、根据OrderCode查询结算单  请输入OrderCode
+        <input id="OrderCode" name="OrderCode" type="text" size="50"/>
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="5"/>5、签约授权
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="6"/>6、创建项目
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="7"/>7、获取项目 请输入项目名称
+        <input id="proname" name="proname" type="text" size="30"/>
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="8"/>8、获取签约结果
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="9"/>9、结算单退款
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="10"/>10、获取项目余额
+        <p>
+        </p>
+        <input name="selectInfo" type="radio" value="11"/>11、获取电子回单
+        <p>
+        </p>
+            <span style="color:#0f58ff;">选择需要验证的功能并点击执行测试按钮</span>
+            <input type="submit" value="执行测试" style="color:#17990d;">
+        <p>
+        </p>
+            <span style="color: #ffda06">{{resMsg}}</span>
+    </form>
+</p>
+
+<p>
+	<span style="color:#009900;">
+	<hr />
+	<div style="text-align:right;">
+		自由薪测试
+	</div>
+</span>
+</p>
+
+
+</body>
+</html>
